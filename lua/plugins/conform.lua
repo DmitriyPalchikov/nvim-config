@@ -7,6 +7,8 @@ return {
 				formatters_by_ft = {
 					lua = { "stylua" },
 					python = { "isort", "black" },
+					bash = { "shfmt" },
+					dockerfile = { "dprint" },
 				},
 			})
 			vim.api.nvim_create_autocmd("BufWritePre", {
